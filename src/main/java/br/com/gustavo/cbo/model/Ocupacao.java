@@ -17,6 +17,8 @@ public class Ocupacao {
 	private String codigo;
 	
 	private String titulo;
+	
+	public Ocupacao() {}
 
 	public Ocupacao(String codigo, String titulo) {
 		super();
