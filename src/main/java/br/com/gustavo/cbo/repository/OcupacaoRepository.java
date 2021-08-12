@@ -10,7 +10,7 @@ import br.com.gustavo.cbo.model.Ocupacao;
 @Repository
 public interface OcupacaoRepository extends JpaRepository<Ocupacao, Integer>{
 
-	Ocupacao findByCodigo(int codigo);
+	Ocupacao findByCodigoContaining(String codigo);
 	
 	
 	List<Ocupacao> findByTituloContainingIgnoreCase(String titulo);

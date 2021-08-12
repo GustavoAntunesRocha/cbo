@@ -14,8 +14,8 @@ public class OcupacaoService {
 	@Autowired
 	private OcupacaoRepository repository;
 	
-	public Ocupacao buscaCodigo(int codigo) {
-		return repository.findByCodigo(codigo);
+	public Ocupacao buscaCodigo(String codigo) {
+		return repository.findByCodigoContaining(codigo);
 	}
 	
 	public List<Ocupacao> buscaTitulo(String titulo){
