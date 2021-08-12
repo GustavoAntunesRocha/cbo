@@ -19,7 +19,7 @@ public class Arquivo {
 	@Autowired
 	private OcupacaoRepository repository;
 	
-	
+	// TODO avaliar momento
 	public void carrega(String path) {
 		BufferedReader br = null;
 	    String linha = "";
